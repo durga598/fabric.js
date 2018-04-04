@@ -169,18 +169,6 @@ fabric.util.object.extend(fabric.StaticCanvas.prototype, /** @lends fabric.Stati
   },
 
   /**
-   * @private
-   * @param {String} format
-   * @param {Number} multiplier
-   * @param {Function} callback
-   */
-  _toDataURLWithMultiplier: function (format, multiplier, callback) {
-    this.clone(function (clone) {
-      callback(clone.toDataURLWithMultiplier(format, multiplier));
-    });
-  },
-
-  /**
    * Clones canvas instance
    * @param {Object} [callback] Receives cloned instance as a first argument
    * @param {Array} [properties] Array of properties to include in the cloned canvas and children
